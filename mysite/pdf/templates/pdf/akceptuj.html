@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class = "container">
+    <div class=" row">
+        <div class="col-md-7">
+         <form method="POST">
+             {% csrf_token %}
+  <div class="form-group">
+    <label for="">Imie:</label>
+    <input type="text" class="form-control" id="imie" name="imie" placeholder="Podaj imie">
+  </div>
+
+  <div class="form-group">
+    <label for="">Nazwisko:</label>
+    <input type="text" class="form-control" id="nazwisko" name="nazwisko" placeholder="Podaj nazwisko">
+  </div>
+
+  <div class="form-group">
+    <label for="">E-mail:</label>
+    <input type="text" class="form-control" id="email" name="email" placeholder="Podaj E-mail">
+  </div>
+
+   <div class="form-group">
+    <label for="">Nr telefonu:</label>
+    <input type="text" class="form-control" id="nr_telefonu" name="nr_telefonu" placeholder="Podaj nr telefonu">
+  </div>
+
+  <div class="form-group">
+    <label for="">Informacje o Tobie.</label>
+      <textarea  class="form-control" id="informacje_ogolne" name="informacje_ogolne" ></textarea>
+  </div>
+  <div class="form-group">
+    <label for="">Wykształcenie:</label>
+    <input type="text" class="form-control" id="wyksztalcenie" name="wyksztalcenie" placeholder="Wykształcenie...">
+  </div>
+
+    <div class="form-group">
+    <label for="">Szkoła średnia:</label>
+    <input type="text" class="form-control" id="szkola" name="szkola" placeholder="Szkoła średnia">
+  </div>
+
+    <div class="form-group">
+    <label for="">Uniwersytet:</label>
+    <input type="text" class="form-control" id="uniwersytet" name="uniwersytet" placeholder="Uniwersytet">
+  </div>
+
+    <div class="form-group">
+    <label for="">Doświadczenie:</label>
+        <textarea class="form-control" id="doswiadczenie" name="doswiadczenie" ></textarea>
+  </div>
+
+   <div class="form-group">
+    <label for="">Umiejętności:</label>
+       <textarea class="form-control" id="umiejetnosci" name="umiejetnosci" ></textarea>
+  </div>
+  <button type="submit" class="btn btn-primary">GENERUJ CV</button>
+</form>
+            <hr>
+            <div> <a href="/list"  class="btn btn-primary"> LISTA WYGENEROWANYCH <br> CV</a></div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>

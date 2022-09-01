@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<h2>{{user_profile.imie}}</h2>
+<h2>{{user_profile.nazwisko}}</h2>
+<h2>{{user_profile.email}}</h2>
+<h2>{{user_profile.nr_telefonu}}</h2>
+<hr/>
+<br/>
+<p>Informacje ogólne:</p>
+<p>{{user_profile.informacje_ogolne}}</p>
+<p>Umiejetnosci:</p>
+<p>{{user_profile.umiejetnosci}}</p>
+
+<hr/>
+<p>Edukacja:</p>
+<ul>
+    <li>{{user_profile.szkola}}</li>
+    <li>{{user_profile.wyksztalcenie}} from {{user_profile.uniwersytet}}</li>
+</ul>
+<hr/>
+<p>Doswiadczenie:</p>
+<p>{{user_profile.doswiadczenie}}</p>
+
+
+</body>
+</html>

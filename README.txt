@@ -1,0 +1,1 @@
+Nazwy w kodzie są po PL, gdyż wymagał tego wykładowca.
